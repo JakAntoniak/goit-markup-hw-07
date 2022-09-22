@@ -14,99 +14,35 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="modal-backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button type="button" class="modal-close-btn" data-modal-close>
-            <svg class="modal-close-icon" width="11" height="11">
-              <use href="./images/icons.svg#icon-form-close"></use>
-            </svg>
-          </button>
-          <h3 class="form-header">Zostaw swoje dane w formularzu poniżej</h3>
-          <form class="modal-form">
-            <label class="form-input"
-              >Imię <input type="text" name="imie" /><svg
-                class="form-icon form-icon-position1"
-                width="18"
-                height="18"
-              >
-                <use href="./images/icons.svg#icon-form-name"></use>
-              </svg>
-            </label>
-            <label class="form-input"
-              >Telefon <input type="tel" name="telephone" /><svg
-                class="form-icon form-icon-position2"
-                width="18"
-                height="18"
-              >
-                <use href="./images/icons.svg#icon-form-tel"></use>
-              </svg>
-            </label>
-            <label class="form-input"
-              >Email <input type="email" name="email" /><svg
-                class="form-icon form-icon-position3"
-                width="18"
-                height="18"
-              >
-                <use href="./images/icons.svg#icon-form-email"></use>
-              </svg>
-            </label>
-            <label
-              >Komentarz
-              <textarea placeholder="Wprowadź tekst"></textarea>
-            </label>
-          </form>
-          <!--  -->
-          <svg class="checkbox-symbol">
-            <symbol id="icon-checkbox" viewBox="0 0 42 32">
-              <path
-                stroke-linejoin="miter"
-                stroke-linecap="butt"
-                stroke-miterlimit="4"
-                stroke-width="0.64"
-                d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"
-              ></path>
-            </symbol>
-          </svg>
-          <div class="checkbox-container">
-            <input class="checkbox-input" id="apples" type="checkbox" />
-            <label class="checkbox" for="apples">
-              <span>
-                <svg width="12px" height="10px">
-                  <use xlink:href="#icon-checkbox"></use>
-                </svg>
-              </span>
-              <span
-                >Oświadczam iż akceptuję
-                <a class="link-color" href="">Regulamin</a> i
-                <a class="link-color" href="">Politykę Prywatności.</a></span
-              >
-            </label>
-          </div>
-          <button class="modal-button" type="submit">Wyślij</button>
-        </div>
-      </div>
       <div class="header-border">
         <header class="header container">
-          <a class="header-logo" href="./index.html"
-            >Web<span class="logo-secondary-color">Studio</span></a
+          <a class="header__logo" href="./index.html"
+            >Web<span class="header__logo--black">Studio</span></a
           >
           <nav class="menu-nav">
-            <a class="underline" href="">Agencja</a>
-            <a href="./portfolio.html">Portfolio</a>
-            <a href="">Kontakt</a>
+            <div class="menu-nav--active">
+              <a class="menu-nav__item--hover-color" href="">Agencja</a>
+            </div>
+            <a class="menu-nav__item--hover-color" href="./portfolio.html"
+              >Portfolio</a
+            >
+            <a class="menu-nav__item--hover-color" href="">Kontakt</a>
           </nav>
           <ul class="header-contacts">
             <li>
-              <a href="mailto:info@devstudio.com">
-                <svg class="header-icon" width="16" height="12">
+              <a
+                class="header-contacts--hover-color"
+                href="mailto:info@devstudio.com"
+              >
+                <svg width="16" height="12">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+48111111111">
-                <svg class="header-icon" width="10" height="16">
+              <a class="header-contacts--hover-color" href="tel:+48111111111">
+                <svg width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +48 111 111 111</a
@@ -575,6 +511,78 @@
         </footer>
       </div>
     </div>
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-form-close"></use>
+          </svg>
+        </button>
+        <h3 class="form-header">Zostaw swoje dane w formularzu poniżej</h3>
+        <form class="modal-form">
+          <label class="form-input"
+            >Imię <input type="text" name="imie" /><svg
+              class="form-icon form-icon-position1"
+              width="18"
+              height="18"
+            >
+              <use href="./images/icons.svg#icon-form-name"></use>
+            </svg>
+          </label>
+          <label class="form-input"
+            >Telefon <input type="tel" name="telephone" /><svg
+              class="form-icon form-icon-position2"
+              width="18"
+              height="18"
+            >
+              <use href="./images/icons.svg#icon-form-tel"></use>
+            </svg>
+          </label>
+          <label class="form-input"
+            >Email <input type="email" name="email" /><svg
+              class="form-icon form-icon-position3"
+              width="18"
+              height="18"
+            >
+              <use href="./images/icons.svg#icon-form-email"></use>
+            </svg>
+          </label>
+          <label
+            >Komentarz
+            <textarea placeholder="Wprowadź tekst"></textarea>
+          </label>
+        </form>
+        <!--  -->
+        <svg class="checkbox-symbol">
+          <symbol id="icon-checkbox" viewBox="0 0 42 32">
+            <path
+              stroke-linejoin="miter"
+              stroke-linecap="butt"
+              stroke-miterlimit="4"
+              stroke-width="0.64"
+              d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"
+            ></path>
+          </symbol>
+        </svg>
+        <div class="checkbox-container">
+          <input class="checkbox-input" id="apples" type="checkbox" />
+          <label class="checkbox" for="apples">
+            <span>
+              <svg width="12px" height="10px">
+                <use xlink:href="#icon-checkbox"></use>
+              </svg>
+            </span>
+            <span
+              >Oświadczam iż akceptuję
+              <a class="link-color" href="">Regulamin</a> i
+              <a class="link-color" href="">Politykę Prywatności.</a></span
+            >
+          </label>
+        </div>
+        <button class="modal-button" type="submit">Wyślij</button>
+      </div>
+    </div>
+
     <script src="./modal.js"></script>
   </body>
 </html>
