@@ -1,0 +1,195 @@
+.welcome-section-background {
+  background-color: $background-alpha;
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url(../images/welcome-section-background-image.jpg);
+}
+
+.welcome-section {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+
+  &__text {
+    color: $white;
+    font-weight: map-get($font-weight, extrabold);
+    font-size: map-get($font-size, main-text);
+    line-height: 1.37;
+    text-align: center;
+    letter-spacing: map-get($letter-spacing, header);
+    text-transform: uppercase;
+    padding: 200px 252px 0;
+    margin: 0 auto;
+  }
+
+  &__button {
+    background-color: $blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 41px 10px 42px;
+    margin: 0 auto 200px;
+    color: $white;
+    font-weight: map-get($font-weight, bold);
+    font-size: map-get($font-size, enlarged);
+    line-height: 1.88;
+    letter-spacing: map-get($letter-spacing, header);
+    border: none;
+  }
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+}
+.article-section {
+  line-height: 1.71;
+  letter-spacing: map-get($letter-spacing, standard);
+
+  & ul {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__logo {
+    background-color: $background-article;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+
+.article-header {
+  font-weight: map-get($font-weight, bold);
+
+  &__paragraph {
+    color: $grey;
+  }
+}
+
+.what-we-do-section {
+  padding-top: 0;
+
+  &__images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & figure {
+    display: flex;
+  }
+}
+
+.section-header {
+  text-align: center;
+  font-weight: map-get($font-weight, bold);
+  font-size: map-get($font-size, section-header);
+  line-height: 1.166;
+  letter-spacing: map-get($letter-spacing, standard);
+  padding-bottom: 50px;
+}
+
+.images-label {
+  position: relative;
+}
+
+// poprawić poniżej
+
+.images-label > p {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 27px 0;
+}
+
+.our-team-background {
+  background: #f5f4fa;
+}
+
+.our-team-section {
+  &__images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__images li {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    gap: 30px;
+  }
+}
+
+.signature {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 30px 0;
+
+  &__position {
+    padding-top: 10px;
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+.social-media-block {
+  display: flex;
+  gap: 10px;
+  padding: 16px 32px 0;
+  align-items: center;
+
+  &__icon {
+    fill: #afb1b8;
+  }
+}
+.circle {
+  border-radius: 50%;
+  background-color: #f5f4fa;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2196f3;
+  }
+}
+.social-media-icon:hover {
+  fill: #ffffff;
+}
+
+.our-clients-logos {
+  display: flex;
+  justify-content: space-between;
+}
+.client-icon {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  cursor: pointer;
+
+  &:hover {
+    fill: #2196f3;
+    border-color: #2196f3;
+  }
+}

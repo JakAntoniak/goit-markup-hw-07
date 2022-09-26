@@ -1,0 +1,134 @@
+.footer-background-color {
+  background: #2f303a;
+}
+.footer {
+  display: flex;
+  gap: 70px;
+  padding: 60px 0;
+  justify-content: space-between;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  &--white {
+    color: $white;
+  }
+}
+
+.contacts {
+  &--column {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 20px;
+  }
+  &--white {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  &--grey {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.social-media-section {
+  padding-top: 9px;
+
+  & p {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding-bottom: 20px;
+  }
+}
+
+.social-media-block {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0;
+}
+
+.circle {
+  &--grey {
+    background-color: #ffffff1a;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &--grey:hover {
+    background-color: #2196f3;
+  }
+}
+
+.social-media-icon {
+  fill: #ffffff;
+}
+
+.newsletter {
+  display: flex;
+  padding-top: 9px;
+
+  &__form p {
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  & input {
+    width: 358px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 10px;
+    outline: none;
+    height: 50px;
+    padding-left: 16px;
+  }
+}
+
+.newsletter-button {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  border: none;
+  padding: 10px 0 10px 42px;
+  cursor: pointer;
+
+  &__icon {
+    margin: 0 28px 0 24px;
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+  }
+}
