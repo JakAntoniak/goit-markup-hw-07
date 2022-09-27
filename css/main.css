@@ -453,10 +453,10 @@ body {
 .social-media-icon {
   fill: #afb1b8;
 }
-.social-media-icon:hover {
+.social-media-icon--white {
   fill: #ffffff;
 }
-.social-media-icon--white {
+.social-media-icon:hover {
   fill: #ffffff;
 }
 
