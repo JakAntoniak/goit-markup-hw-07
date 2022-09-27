@@ -428,9 +428,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.social-media-block__icon--color {
-  fill: #afb1b8;
-}
 .social-media-block--left {
   padding: 0;
 }
@@ -442,17 +439,6 @@ body {
   height: 44px;
   cursor: pointer;
 }
-.circle:hover {
-  background-color: #2196f3;
-}
-
-.social-media-block__icon {
-  fill: #ffffff;
-}
-.social-media-block__icon:hover {
-  fill: #ffffff;
-}
-
 .circle--grey {
   background-color: rgba(255, 255, 255, 0.1019607843);
   width: 44px;
@@ -460,8 +446,18 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-.circle--grey:hover {
+.circle:hover, .circle--grey:hover {
   background-color: #2196f3;
+}
+
+.social-media-icon {
+  fill: #afb1b8;
+}
+.social-media-icon:hover {
+  fill: #ffffff;
+}
+.social-media-icon--white {
+  fill: #ffffff;
 }
 
 .modal-backdrop {
