@@ -13,12 +13,6 @@
   flex-direction: column;
 }
 
-.logo {
-  &--white {
-    color: $white;
-  }
-}
-
 .contacts {
   &--column {
     display: flex;
@@ -40,45 +34,6 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
-}
-
-.social-media-section {
-  padding-top: 9px;
-
-  & p {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    padding-bottom: 20px;
-  }
-}
-
-.social-media-block {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  padding: 0;
-}
-
-.circle {
-  &--grey {
-    background-color: #ffffff1a;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  &--grey:hover {
-    background-color: #2196f3;
-  }
-}
-
-.social-media-icon {
-  fill: #ffffff;
 }
 
 .newsletter {
