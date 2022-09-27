@@ -64,26 +64,3 @@
     padding-left: 16px;
   }
 }
-
-.newsletter-button {
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  border: none;
-  padding: 10px 0 10px 42px;
-  cursor: pointer;
-
-  &__icon {
-    margin: 0 28px 0 24px;
-    width: 24px;
-    height: 24px;
-    fill: #ffffff;
-  }
-}
