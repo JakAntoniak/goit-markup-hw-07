@@ -428,7 +428,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.social-media-block__icon {
+.social-media-block__icon--color {
   fill: #afb1b8;
 }
 .social-media-block--left {
