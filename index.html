@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -433,6 +433,8 @@
         </section>
       </main>
 
+      <!-- FOOTER -->
+
       <div class="footer-background-color">
         <footer class="footer container">
           <div class="footer-contacts">
@@ -504,7 +506,7 @@
                 <p>Zapisz się do newslettera</p>
                 <input type="email" placeholder="E-mail" name="email"
               /></label>
-              <button class="button button--right-padding" type="submit">
+              <button class="button--footer-position" type="submit">
                 Zapisz się
                 <svg class="button__icon">
                   <use
@@ -519,6 +521,9 @@
         </footer>
       </div>
     </div>
+
+    <!-- MODAL SECTION -->
+
     <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
@@ -586,9 +591,7 @@
               >
             </label>
           </div>
-          <button class="button button--bigger-padding" type="submit">
-            Wyślij
-          </button>
+          <button class="button--form-position" type="submit">Wyślij</button>
         </form>
       </div>
     </div>

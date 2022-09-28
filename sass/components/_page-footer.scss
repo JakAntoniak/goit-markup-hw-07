@@ -1,5 +1,5 @@
 .footer-background-color {
-  background: #2f303a;
+  background: $background-footer;
 }
 .footer {
   display: flex;
@@ -21,17 +21,17 @@
     padding-top: 20px;
   }
   &--white {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: map-get($font-weight, regular);
+    font-size: map-get($font-size, standard);
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #ffffff;
+    letter-spacing: map-get($letter-spacing, standard);
+    color: $white;
   }
   &--grey {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: map-get($font-weight, regular);
+    font-size: map-get($font-size, standard);
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    letter-spacing: map-get($letter-spacing, standard);
     color: rgba(255, 255, 255, 0.6);
   }
 }
@@ -42,12 +42,12 @@
 
   &__form p {
     padding-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: map-get($font-weight, bold);
+    font-size: map-get($font-size, standard);
     line-height: 16px;
-    letter-spacing: 0.03em;
+    letter-spacing: map-get($letter-spacing, standard);
     text-transform: uppercase;
-    color: #ffffff;
+    color: $white;
   }
 
   & input {
@@ -56,7 +56,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background-color: #2f303a;
+    background-color: $background-footer;
     color: rgba(255, 255, 255, 0.6);
     margin-right: 10px;
     outline: none;

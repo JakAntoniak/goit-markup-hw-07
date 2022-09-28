@@ -13,22 +13,24 @@
   letter-spacing: map-get($letter-spacing, header);
   border: none;
 
-  &--right-padding {
-    margin: 0 auto;
-    padding-right: 76px;
-  }
-
-  &--bigger-padding {
-    display: flex;
-    margin: 0 auto 40px;
-    padding: 10px 76px;
-  }
-
   &__icon {
     position: absolute;
     right: 28px;
     width: 24px;
     height: 24px;
-    fill: #ffffff;
+    fill: $white;
   }
+}
+
+.button--footer-position {
+  @extend .button;
+  margin: 0 auto;
+  padding-right: 76px;
+}
+
+.button--form-position {
+  @extend .button;
+  display: flex;
+  margin: 0 auto 40px;
+  padding: 10px 76px;
 }

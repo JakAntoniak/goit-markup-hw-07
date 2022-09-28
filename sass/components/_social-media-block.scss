@@ -2,12 +2,12 @@
   padding-top: 9px;
 
   & p {
-    color: #ffffff;
+    color: $white;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: map-get($font-weight, bold);
+    font-size: map-get($font-size, standard);
     line-height: 16px;
-    letter-spacing: 0.03em;
+    letter-spacing: map-get($letter-spacing, standard);
     padding-bottom: 20px;
   }
 }
@@ -25,13 +25,13 @@
 
 .circle {
   border-radius: 50%;
-  background-color: #f5f4fa;
+  background-color: $background-article;
   width: 44px;
   height: 44px;
   cursor: pointer;
 
   &--grey {
-    background-color: #ffffff1a;
+    background-color: $footer-circle-bg;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -40,18 +40,18 @@
 
   &:hover,
   &--grey:hover {
-    background-color: #2196f3;
+    background-color: $blue;
   }
 }
 
 .social-media-icon {
-  fill: #afb1b8;
+  fill: $icon-background;
 
   &--white {
-    fill: #ffffff;
+    fill: $white;
   }
 
   &:hover {
-    fill: #ffffff;
+    fill: $white;
   }
 }
