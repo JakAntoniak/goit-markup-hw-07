@@ -1,15 +1,5 @@
 .social-media-section {
   padding-top: 9px;
-
-  & p {
-    color: $white;
-    text-transform: uppercase;
-    font-weight: map-get($font-weight, bold);
-    font-size: map-get($font-size, standard);
-    line-height: 16px;
-    letter-spacing: map-get($letter-spacing, standard);
-    padding-bottom: 20px;
-  }
 }
 
 .social-media-block {

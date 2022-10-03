@@ -36,16 +36,16 @@
   line-height: 1.71;
   letter-spacing: map-get($letter-spacing, standard);
 
-  & ul {
-    display: flex;
-    gap: 30px;
-  }
-
   &__logo {
     background-color: $background-article;
     border-radius: 4px;
     margin-bottom: 30px;
   }
+}
+
+.article-section > ul {
+  display: flex;
+  gap: 30px;
 }
 
 .article-header {
@@ -63,10 +63,10 @@
     display: flex;
     justify-content: space-between;
   }
+}
 
-  & figure {
-    display: flex;
-  }
+.what-we-do-section-card {
+  display: flex;
 }
 
 .section-header {
@@ -81,7 +81,7 @@
 .images-label {
   position: relative;
 
-  & > p {
+  &__description {
     position: absolute;
     bottom: 0;
     background-color: rgba(47, 48, 58, 0.8);
@@ -107,7 +107,7 @@
     justify-content: space-between;
   }
 
-  &__images li {
+  &__card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;

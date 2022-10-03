@@ -4,11 +4,11 @@
   color: $blue;
   letter-spacing: map-get($letter-spacing, standard);
 
-  &--black {
+  &__header-color {
     color: $black;
   }
 
-  &--white {
+  &__footer-color {
     color: $white;
   }
 }
