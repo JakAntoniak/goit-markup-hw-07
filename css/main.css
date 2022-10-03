@@ -55,13 +55,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.menu-nav a {
+.menu-nav__menu-item {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #212121;
 }
-.menu-nav--hover-color:hover {
+.menu-nav__menu-item:hover {
   color: #2196f3;
   -webkit-transition: 250ms;
   transition: 250ms;
@@ -88,7 +88,7 @@ body {
   gap: 50px;
   margin-left: auto;
 }
-.contacts--hover-color:hover, .contacts--hover-color:focus, .contacts--hover-color:hover {
+.contacts__menu-item:hover, .contacts__menu-item:focus, .contacts__menu-item:hover {
   color: #2196f3;
   fill: #2196f3;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,7 +100,7 @@ body {
   margin-right: 10px;
 }
 
-.contacts a {
+.contacts__menu-item {
   color: #757575;
   display: -webkit-box;
   display: -ms-flexbox;
